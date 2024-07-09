@@ -9,5 +9,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'touchtest';
+  counter: number = 0;
+
+  increase(): void {
+    this.counter += 1;
+  }
 }
