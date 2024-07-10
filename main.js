@@ -11,7 +11,8 @@ counter.innerText = initialCount;
 
 const clicker = document.querySelector('.clicker');
 
-clicker.addEventListener('touchstart', () => {
+clicker.addEventListener('touchstart', (e) => {
   initialCount += 1;
   counter.innerText = initialCount;
+  console.log(e)
 })
